@@ -9,6 +9,17 @@
 
 // Your code :
 
+function getLast(argument){
+    let lastCaracter;
+    if (typeof argument === 'string'){
+        lastCaracter = argument.charAt(argument.length - 1);
+        return lastCaracter;
+    } else {
+        lastCaracter = argument[argument.length - 1];
+        return lastCaracter;
+    }
+}
+
 //* Begin of tests
 const assert = require('assert')
 

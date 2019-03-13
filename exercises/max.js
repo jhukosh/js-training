@@ -11,6 +11,16 @@
 
 // Your code :
 
+function max(num1,num2){
+    let result;
+    if (num1 > num2){
+        result = num1;
+    } else {
+        result = num2;
+    }
+    return result;
+}
+
 //* Begin of tests
 const assert = require('assert')
 

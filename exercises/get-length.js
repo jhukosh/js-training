@@ -9,6 +9,11 @@
 
 // Your code :
 
+function getLength(argument){
+    let longueur = argument.length;
+    return longueur;
+}
+
 //* Begin of tests
 const assert = require('assert')
 

@@ -1,4 +1,4 @@
-'use strict'
+ 'use strict'
 
 /*
  * Create a `repeat` function that takes a string and a number as parameters
@@ -7,6 +7,17 @@
  * Of course you may not use the method directly
  *
  */
+
+ function repeat(string, number){
+     let result = string;
+    for (let i = 0; i< number-1; i++){
+        result = result + string;
+    }
+    if (number === 0){
+        result = "";
+    }
+    return result;
+}
 
 //* Begin of tests
 const assert = require('assert')

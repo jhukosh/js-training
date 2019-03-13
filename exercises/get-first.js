@@ -9,6 +9,17 @@
 
 // Your code :
 
+function getFirst(argument){
+    let firstCaracter;
+    if (typeof argument === 'string'){
+        firstCaracter = argument.charAt(0);
+        return firstCaracter;
+    } else {
+        firstCaracter = argument[0];
+        return firstCaracter;
+    }
+}
+
 //* Begin of tests
 const assert = require('assert')
 

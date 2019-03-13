@@ -12,9 +12,14 @@
  *
  */
 
+ function keepFirst(string){
+     return string.substr(0,2);
+ }
+
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof keepFirst, 'function')
+assert.strictEqual(keepFirst('hello'), 'he')
 // End of tests */

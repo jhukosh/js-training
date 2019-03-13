@@ -6,9 +6,15 @@
  *
  */
 
+ function yell(string){
+     let result;
+     result = string.toUpperCase();
+     return result;
+ }
+
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(yell('coco'), 'COCO')
 // End of tests */

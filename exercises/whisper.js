@@ -7,9 +7,14 @@
  *
  */
 
+ function whisper(string){
+    let result;
+    result = "*" + string.toLowerCase() + "*";
+    return result;
+ }
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(whisper('COCO'), '*coco*')
 // End of tests */
